@@ -2,16 +2,14 @@
 
 *** README ***
 
-So far, this bot has been trained only on 300 lines of dialogue
+This chatbot uses a seq2seq model to respond to an input text.
+The input text is analyzed for sentiment, using a Naive Bayes classifier, and then responds accordingly.
 
-I have cleaned and prepared an additional 40000 in movie_dataset.txt.
-To train the bot on this, take the 'from.txt' and 'to.txt' files and put them in 
-'conversation_data' or 'conversation_data_neg' folder, depending on the bot you want to train.
+It has been hosted on 157.230.175.214, although it is not online 24 hours.
 
-You would use 'conversation_data' to train the bot in 'chatbot_logic.py' and 'conversation_data_neg' to train the bot in 'negative_bot.py'.
+Contact gurkarn.goindi@berkeley.edu for uptime schedule.
 
-I think the Cornell Movie dialogue corpus has about 100,000 lines of dialogue, so if you want to use all 100,000, go to 'movie_dataset', 'cornell_cleaner.py' and change the 40000 to 100,000. The code should be fine.
+Run emotion_api.py to run the program locally on your computer
 
-Run emotion_api.py to run the program
+The positive-emotion chatbot is in 'chatbot_logic.py' and the negative-emotion chatbot is in 'negative_bot.py'. Sentiment analysis is done in 'sentiment_analyzer.py'.
 
-The positive chatbot is in 'chatbot_logic.py' and the negative chatbot is in 'negative_bot.py'. Sentiment analysis is done in 'sentiment_analyzer.py'. 
